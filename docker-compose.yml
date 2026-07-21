@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: studyflow
+      POSTGRES_USER: studyflow
+      POSTGRES_PASSWORD: studyflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - studyflow-postgres:/var/lib/postgresql/data
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  studyflow-postgres:
+
