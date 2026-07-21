@@ -27,6 +27,9 @@ via a small popup.
 Mock mode (default) needs no API keys and runs the same code path as production, just with a
 mock transcription/classification provider.
 
+A sample lecture video is included at `samples/sample-lecture.mp4` if you want something to
+upload right away instead of finding your own.
+
 ## Real providers
 
 ```dotenv
@@ -56,6 +59,12 @@ Full variable list is in `.env.example`.
   the video is actually playing.
 - Player controls (play/pause, skip, captions, fullscreen) are custom-built rather than relying
   on the native `<video controls>` bar, since the browser's native controls can't be extended.
+
+## Built with
+
+The app itself runs on GPT-5.6 for complexity classification and GPT-4o-transcribe for
+transcription. The code was built working alongside Codex, OpenAI's coding agent — same models
+on both sides of this project.
 
 ## Checks
 

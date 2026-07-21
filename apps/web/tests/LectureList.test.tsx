@@ -77,7 +77,7 @@ describe("LectureList", () => {
     );
 
     expect(await screen.findByRole("heading", { name: "No lectures yet" })).toBeVisible();
-    expect(screen.getByText(/Use Upload at the top of the page/)).toBeVisible();
+    expect(screen.getByText(/Use the \+ button above/)).toBeVisible();
     expect(screen.queryByRole("link", { name: /upload/i })).not.toBeInTheDocument();
   });
 

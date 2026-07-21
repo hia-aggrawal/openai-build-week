@@ -78,8 +78,8 @@ export function LectureList() {
           <span className="eyebrow">Start your library</span>
           <h3>No lectures yet</h3>
           <p>
-            Use Upload at the top of the page to add your first lecture. StudyFlow will move quickly
-            through simple material while keeping dense concepts at a thoughtful pace.
+            Use the + button above to add your first lecture. StudyFlow will move quickly through
+            simple material while keeping dense concepts at a thoughtful pace.
           </p>
         </div>
       )}

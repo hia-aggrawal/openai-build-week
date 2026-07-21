@@ -43,7 +43,7 @@ test("desktop hero keeps the heading clear of the upload card", async ({ page })
   await page.getByRole("link", { name: "Library" }).click();
   await expect(page).toHaveURL("/library");
   await expect(page.getByRole("heading", { name: "Your lectures" })).toBeVisible();
-  await expect(page.getByText(/Use Upload at the top of the page/)).toBeVisible();
+  await expect(page.getByText(/Use the \+ button above/)).toBeVisible();
   await page.getByRole("button", { name: "Upload a lecture" }).click();
   await expect(page.getByRole("dialog", { name: "Upload a lecture" })).toBeVisible();
   await page.getByRole("button", { name: "Close upload dialog" }).click();
